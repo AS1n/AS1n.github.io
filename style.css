@@ -1,0 +1,15 @@
+.score {
+  font-size: 32px;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+#score {
+  font-weight: bold;
+}
+
+/*
+#test {
+  font-size: 32px;
+}
+*/
