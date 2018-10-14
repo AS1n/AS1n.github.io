@@ -1,6 +1,6 @@
 $('.carousel').carousel({
-  interval: 3000,
-  keyboard: false
+  interval: 400000,
+  keyboard: false,
 })
 
 $('#signInModal').modal({
