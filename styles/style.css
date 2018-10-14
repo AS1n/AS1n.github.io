@@ -6,6 +6,11 @@
   padding: 20px;
 }
 
+.mp-cards {
+  margin: 20px;
+  padding: 10px;
+}
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   width: 50px;
