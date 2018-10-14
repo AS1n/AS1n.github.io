@@ -4,7 +4,5 @@ $('.carousel').carousel({
 })
 
 $('#signInModal').modal({
-  keyboard: false,
-  backdrop: "static",
   show: false
 })
