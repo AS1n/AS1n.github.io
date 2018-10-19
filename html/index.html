@@ -14,40 +14,46 @@
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <a href="#" class="navbar-brand">
-      <img src="https://cdn.dribbble.com/users/3013/screenshots/3538551/ntc_logo_grid_teaser.png" width="40" height="40" alt="logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-lable="Toggle navigation">
+    <div class="container">
+      <a href="#top" class="navbar-brand">
+        <img src="https://cdn.dribbble.com/users/3013/screenshots/3538551/ntc_logo_grid_teaser.png" width="40" height="40" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-lable="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a href="#" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="personal_account.html" class="nav-link">Personal account</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">About us</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link" data-toggle="modal" data-target="#signInModal">Sign in</a>
-        </li>
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="#top" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="my_subscriptions.html" class="nav-link">My subscriptions</a>
+          </li>
+          <li class="nav-item">
+            <a href="about_us.html" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="modal" data-target="#signInModal">Sign in</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" data-toggle="modal" data-target="#registerModal">Register</a>
+          </li>
+        </ul>
 
-      <form class="form-inline my-2 my-lg-0">
-        <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0">Search</button>
-      </form>
+        <form class="form-inline my-2 my-lg-0">
+          <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0">Search</button>
+        </form>
 
+      </div>
     </div>
   </nav>
 
 
-  <div class="container-fluid p-0">
+  <div class="container p-0">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
@@ -91,53 +97,70 @@
   <div class="container-fluid">
     <div class="container">
       <div class="row text-center justify-content-around">
-        <div class="card col-xs-12 col-sm-12 col-lg-5 mp-cards">
+        <div class="card col-sm-12 col-me-5 col-lg-3 mp-cards">
           <img class="card-img-top" src="../img/mers-1.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Lorem ipsum</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et error id a, esse est fugiat eaque repellat tempore, deleniti ducimus!</p>
-            <a href="#" class="btn btn-primary">Subscribe</a>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, provident?</p>
+            <div class="row justify-content-around">
+              <a href="#" class="btn btn-primary col-5">Subscribe</a>
+              <label class="col-5 p-0">35$</label>
+            </div>
           </div>
-
         </div>
-        <div class="card col-sm-12 col-lg-5 mp-cards">
+        <div class="card col-sm-12 col-me-5 col-lg-3 mp-cards">
           <img class="card-img-top" src="../img/mers-2.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Lorem ipsum</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi provident magnam reprehenderit eaque modi rerum. Nostrum porro perspiciatis tempora repudiandae.</p>
-            <a href="#" class="btn btn-primary">Subscribe</a>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, recusandae.</p>
+            <div class="row justify-content-around">
+              <a href="#" class="btn btn-primary col-5">Subscribe</a>
+              <label class="col-5 p-0">30$</label>
+            </div>
           </div>
         </div>
-        <div class="card col-sm-12 col-lg-5 mp-cards">
+        <div class="card col-sm-12 col-me-5 col-lg-3 mp-cards">
           <img class="card-img-top" src="../img/mers-3.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Lorem ipsum</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem incidunt nihil cumque inventore mollitia molestias quaerat ad esse necessitatibus perferendis.</p>
-            <a href="#" class="btn btn-primary">Subscribe</a>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, debitis?</p>
+            <div class="row justify-content-around">
+              <a href="#" class="btn btn-primary col-5">Subscribe</a>
+              <label class="col-5 p-0">40$</label>
+            </div>
           </div>
         </div>
-        <div class="card col-sm-12 col-lg-5 mp-cards">
+        <div class="card col-sm-12 col-me-5 col-lg-3 mp-cards">
           <img class="card-img-top" src="../img/mers-4.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Lorem ipsum</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem ut totam ex repudiandae sunt labore ipsum ipsam pariatur magni voluptates?</p>
-            <a href="#" class="btn btn-primary">Subscribe</a>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, eveniet!</p>
+            <div class="row justify-content-around">
+              <a href="#" class="btn btn-primary col-5">Subscribe</a>
+              <label class="col-5 p-0">36$</label>
+            </div>
           </div>
         </div>
-        <div class="card col-sm-12 col-lg-5 mp-cards">
+        <div class="card col-sm-12 col-me-5 col-lg-3 mp-cards">
           <img class="card-img-top" src="../img/bmw-1.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Lorem ipsum</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolor, magnam quos fugiat nesciunt eveniet sapiente, facere voluptatem sint consequatur.</p>
-            <a href="#" class="btn btn-primary">Subscribe</a>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, laborum.</p>
+            <div class="row justify-content-around">
+              <a href="#" class="btn btn-primary col-5">Subscribe</a>
+              <label class="col-5 p-0">20$</label>
+            </div>
           </div>
         </div>
-        <div class="card col-sm-12 col-lg-5 mp-cards">
+        <div class="card col-sm-12 col-me-5 col-lg-3 mp-cards">
           <img class="card-img-top" src="../img/bmw-2.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Lorem ipsum</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam odit soluta maxime commodi ut quia aut nostrum eius nisi beatae!</p>
-            <a href="#" class="btn btn-primary">Subscribe</a>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, porro.</p>
+            <div class="row justify-content-around">
+              <a href="#" class="btn btn-primary col-5">Subscribe</a>
+              <label class="col-5 p-0">15$</label>
+            </div>
           </div>
         </div>
         <!--
@@ -180,15 +203,6 @@
                   <!-- I need to delete "required" atribute and add check of valide data in script.js   -->
                 </div>
               </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <img src="../img/password40.png" class="p-r-10" alt="icon">
-                  </div>
-                  <input type="password" class="form-control" placeholder="Confirm password" required>
-                  <!-- I need to delete "required" atribute and add check of valide data in script.js   -->
-                </div>
-              </div>
               <div class="container">
                 <div class="row justify-content-between">
                   <div class="form-check col-3">
@@ -205,6 +219,62 @@
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Register</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <form>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <img src="../img/email-icon40.jpg" class="p-r-10" alt="icon">
+                  </div>
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <img src="../img/password40.png" class="p-r-10" alt="icon">
+                  </div>
+                  <input type="password" class="form-control" placeholder="Password" required>
+                  <!-- I need to delete "required" atribute and add check of valide data in script.js   -->
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <img src="../img/password40.png" class="p-r-10" alt="icon">
+                  </div>
+                  <input type="password" class="form-control" placeholder="Confirm password" required>
+                  <!-- I need to delete "required" atribute and add check of valide data in script.js   -->
+                </div>
+              </div>
+              <div class="container">
+                <div class="row justify-content-between">
+                  <div class="form-check col-3">
+                    <div class="form-check-label">
+                      <input type="checkbox" class="form-check-input"> Save me
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary col-3">Register</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <!-- Optional JavaScript -->
