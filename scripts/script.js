@@ -6,3 +6,7 @@ $('.carousel').carousel({
 $('#signInModal').modal({
   show: false
 })
+
+$('#registerModal').modal({
+  show: false
+})
