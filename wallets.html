@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css(bootstrap)/bootstrap.css">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+
+  <link rel="stylesheet" href="styles/cards.css">
+
+  <title>Wallets</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/ntc_logo.png" width="40" height="40" alt="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-lable="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="my_subscriptions.html" class="nav-link">My subscriptions</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#top" class="nav-link">Wallets</a>
+          </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <a class="btn btn-success my-2 mr-sm-2" data-toggle="modal" data-target="#addWaletModal">
+            <span class="fas fa-plus" aria-hidden="true"></span>
+            <span class="sr-only">Add a wallet</span>
+          </a>
+          <input type="text" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Body -->
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="card mp-cards col-sm-12 col-me-5 col-lg-3">
+        <div class="card-body">
+          <h5 class="card-title">Total</h5>
+          <p class="card-text">Your total money from all your wallets</p>
+        </div>
+        <div class="row justify-content-around">
+          <button href="#" class="btn btn-primary col-auto">Remove</button>
+          <p class="balance col-auto"></p>
+        </div>
+      </div>
+      <div class="card mp-cards col-sm-12 col-me-5 col-lg-3">
+        <div class="card-body">
+          <h5 class="card-title">walletName</h5>
+          <p class="card-text">Here will be some description of this wallet that will be writen down when create a new wallet</p>
+        </div>
+        <div class="row justify-content-around">
+          <button href="#" class="btn btn-primary col-auto">Remove</button>
+          <p class="balance col-auto"></p>
+        </div>
+      </div>
+      <div class="card mp-cards col-sm-12 col-me-5 col-lg-3">
+        <div class="card-body">
+          <h5 class="card-title">walletName</h5>
+          <p class="card-text">Here will be some description of this wallet that will be writen down when create a new wallet</p>
+        </div>
+        <div class="row justify-content-around">
+          <button href="#" class="btn btn-primary col-auto">Remove</button>
+          <p class="balance col-auto"></p>
+        </div>
+      </div>
+      <div class="card mp-cards col-sm-12 col-me-5 col-lg-3">
+        <div class="card-body">
+          <h5 class="card-title">walletName</h5>
+          <p class="card-text">Here will be some description of this wallet that will be writen down when create a new wallet</p>
+        </div>
+        <div class="row justify-content-around">
+          <button href="#" class="btn btn-primary col-auto">Remove</button>
+          <p class="balance col-auto"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modals -->
+  <div class="modal fade" id="addWaletModal" tabindex="-1" role="dialog" aria-labelledby="addWaletModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addWaletModalLabel">Add a wallet</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="container-fluid">
+            <form>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <img src="img/email-icon40.jpg" class="p-r-10" alt="icon">
+                  </div>
+                  <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <img src="img/password40.png" class="p-r-10" alt="icon">
+                  </div>
+                  <input type="password" class="form-control" placeholder="Password" required>
+                  <!--                   I need to delete "required" atribute and add check of valide data in script.js   -->
+                </div>
+              </div>
+              <div class="container">
+                <div class="row justify-content-between">
+                  <div class="form-check col-3">
+                    <div class="form-check-label">
+                      <input type="checkbox" class="form-check-input"> Save me
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary col-3">Sign in</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="js(bootstrap)/bootstrap.js"></script>
+
+  <script src="scripts/wallets.js"></script>
+
+</body>
+
+</html>

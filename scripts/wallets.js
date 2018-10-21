@@ -1,9 +1,8 @@
-var spent, left, days, values;
+var total, values, valute;
 
-spent = 100;
-left = 250;
-values = [10, 20, 13, 22, 16, 19];
-days = [15, 17, 20, 5, 28, 40];
+total = 0;
+values = [25, 240, 33, 22, 1, 20];
+valute = "$"
 
 //document.getElementById("balance").addEventListener('click', function () {
 //  this.innerHTML = "Your balance:  " + value + "$ / " + days + " days";
@@ -13,6 +12,9 @@ days = [15, 17, 20, 5, 28, 40];
 
 var balances = document.getElementsByClassName("balance");
 
-for (let i = 0; i < balances.length; i++) {
-  balances[i].innerHTML = "Balance: " + values[i] + "$ / " + days[i] + " days";
+for (let i = 1; i < balances.length; i++) {
+  balances[i].innerHTML = values[i - 1] + valute;
+  total += values[i - 1];
 }
+
+balances[0].innerHTML = total + valute;
